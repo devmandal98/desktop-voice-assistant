@@ -524,7 +524,7 @@ INTENT_ACTIONS = {
     "hey there" : lambda q: (print("hey! nice to hear from you"), speak("hey! nice to hear from you")),
     "translate": lambda q: handle_translate(),
     "bye bye": lambda q: exit_system(),
-    "hello": lambda q: (print("Hello!!!, how can i assist you?"), speak("Hello!, how can i assist you?")),
+    "hello" or "whats up" : lambda q: (print("Hello!!!, how can i assist you?"), speak("Hello!, how can i assist you?")),
     "i am fine": lambda q: (print("Its nice that you are fine!"), speak("Its nice that you are fine!")),
     "how are you": lambda q: (print("I'm great! thanks for asking, how about you?"), speak("I'm great! thanks for asking, how about you?")),
     "open": openappweb,
